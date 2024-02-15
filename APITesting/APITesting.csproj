@@ -47,7 +47,9 @@
     <Compile Include="ChuckNorris\ChuckBase.cs" />
     <Compile Include="ChuckNorris\ChuckJokes.cs" />
     <Compile Include="Exersices\ExampleAuth.cs" />
+    <Compile Include="Exersices\HomaAssigment1.cs" />
     <Compile Include="Exersices\OpenWeatherMap3.cs" />
+    <Compile Include="Exersices\HomaAssigment2.cs" />
     <Compile Include="Exersices\StudentsList.cs" />
     <Compile Include="Grafana\Grafana.cs" />
     <Compile Include="Grafana\GrafanaBase.cs" />
