@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ENVIROMENT>
+	<BROWSER_TYPE>Chrome</BROWSER_TYPE>
+	<URL>https://en.wikipedia.org/wiki/Test_automation</URL>
+	<URL_API>https://www.mediawiki.org/w/api.php</URL_API>
+	<TIME_OUT>5</TIME_OUT>
+	<REPORT_FILE_PATH>C:\Temp\Reports</REPORT_FILE_PATH>
+	<REPORT_FILE_NAME>\report.html</REPORT_FILE_NAME>
+</ENVIROMENT>

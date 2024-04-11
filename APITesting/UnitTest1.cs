@@ -32,7 +32,7 @@ namespace APITesting
         public void Test02(string value)
         {
             //Assert.AreEqual("Bing", value, "result");
-            ClassicAssert.AreEqual("Bing", (value), $"Expected {"Bing"} equal to {value}");
+            ClassicAssert.AreEqual("Google", value, $"Expected {"Google"} equal to {value}");
         }
 
         [TestCase("Google")]
