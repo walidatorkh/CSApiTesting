@@ -42,17 +42,21 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChuckNorris\ChuckBase.cs" />
     <Compile Include="ChuckNorris\ChuckJokes.cs" />
     <Compile Include="Exersices\ExampleAuth.cs" />
-    <Compile Include="Exersices\HomaAssigment1.cs" />
+    <Compile Include="HomeAssignment\HomeAssignment1.cs" />
     <Compile Include="Exersices\OpenWeatherMap3.cs" />
-    <Compile Include="Exersices\HomaAssigment2.cs" />
+    <Compile Include="HomeAssignment\HomeAssignment2.cs" />
     <Compile Include="Exersices\StudentsList.cs" />
     <Compile Include="Grafana\Grafana.cs" />
     <Compile Include="Grafana\GrafanaBase.cs" />
+    <Compile Include="HomeAssignment\TDDCBase.cs" />
+    <Compile Include="HomeAssignment\TDDPage.cs" />
+    <Compile Include="HomeAssignment\TDDCommon.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Exersices\OpenWeatherMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,6 +64,15 @@
   <ItemGroup>
     <PackageReference Include="DotNetSeleniumExtras.PageObjects">
       <Version>3.11.0</Version>
+    </PackageReference>
+    <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers">
+      <Version>3.11.0</Version>
+    </PackageReference>
+    <PackageReference Include="ExtentReports">
+      <Version>2.41.0</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>13.0.3</Version>
@@ -79,8 +92,11 @@
     <PackageReference Include="RestSharp">
       <Version>110.2.0</Version>
     </PackageReference>
+    <PackageReference Include="Selenium.Support">
+      <Version>4.3.0</Version>
+    </PackageReference>
     <PackageReference Include="Selenium.WebDriver">
-      <Version>4.17.0</Version>
+      <Version>4.3.0</Version>
     </PackageReference>
     <PackageReference Include="Selenium.WebDriver.ChromeDriver">
       <Version>121.0.6167.8500</Version>

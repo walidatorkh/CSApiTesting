@@ -5,14 +5,21 @@ using OpenQA.Selenium.Chrome;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using System.IO;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.PageObjects;
+using SeleniumExtras.WaitHelpers;
+using APITesting.HomeAssignment;
 
-namespace APITesting.Exersices
+namespace APITesting.HomeAssignment
 {
     [TestFixture]
 
-    public class HomaAssigment1
+    public class HomeAssigment1
     {
         IWebDriver driver;
+        //TDDPage tddp = new TDDPage();
+        InitTDDPage tddp;
+        WebDriverWait wait;
 
 
         [OneTimeSetUp]
@@ -21,10 +28,34 @@ namespace APITesting.Exersices
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://en.wikipedia.org/wiki/Test_automation");
+            //wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
+            //PageFactory.InitElements(driver, tddp);
+            tddp = new InitTDDPage(driver);
+
         }
 
         [Test]
+
         public void Test01_FindUniqeWords()
+        {
+            try
+            {
+                Console.WriteLine(tddp.testDrivenDevelopmentSection.Text);
+                Console.WriteLine(tddp.parentDiv.Text);
+                // Print the extracted text content
+                string sectionContent = (tddp.testDrivenDevelopmentSection.Text) + "\n" + (tddp.parentDiv.Text);
+                Console.WriteLine(sectionContent);
+
+            }
+            catch (NoSuchElementException)
+            {
+                // Handle case where elements are not found
+                Console.WriteLine("Element not found.");
+            }
+        }
+
+        [Test]
+        public void Test01_FindUniqeWord()
         {
             try
             {
@@ -71,6 +102,7 @@ namespace APITesting.Exersices
                 Console.WriteLine("Element not found.");
             }
         }
+
 
 
         [Test]

@@ -6,10 +6,10 @@ using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 using RestSharp;
 
-namespace APITesting.Exersices
+namespace APITesting.HomeAssignment
 {
     [TestFixture]
-    internal class HomaAssigment2
+    internal class HomeAssignment2
     {
         string url = "https://www.mediawiki.org/w/api.php";
         RestClient client;
@@ -30,7 +30,7 @@ namespace APITesting.Exersices
             try
             {
                 // Prepare request to query the API
-                request = new RestRequest("?action=query&list=search&srsearch=Test automation&format=json", Method.Get);
+                request = new RestRequest("?action=query&list=Search$srsearch=Test-driven development$format=json", Method.Get);
 
                 // Execute the request and get the response
                 queryResult = client.Execute(request);
